@@ -1,0 +1,35 @@
+﻿@model UserRegisterViewModel
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <form method="post">
+        <label>Adınız</label>
+        <input type="text" asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <br />
+        <label>Soyadınız</label>
+        <input type="text" asp-for="Surname" class="form-control" />
+        <span asp-validation-for="Surname" class="text-danger"></span>
+        <br />
+        <label>Mail Adresiniz</label>
+        <input type="text" asp-for="Mail" class="form-control" />
+        <span asp-validation-for="Mail" class="text-danger"></span>
+        <br />
+        <label>Kullanıcı Adınız</label>
+        <input type="text" asp-for="Username" class="form-control" />
+        <span asp-validation-for="Username" class="text-danger"></span>
+        <br />
+        <label>Şifreniz</label>
+        <input type="text" asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+        <br />
+        <label>Şifre Tekrar</label>
+        <input type="text" asp-for="comfirmpassword" class="form-control" />
+        <span asp-validation-for="comfirmpassword" class="text-danger"></span>
+        <br />
+        <div asp-validation-summary="ModelOnly"></div>
+        <button class="btn-outline-dark">Kullanıcı Kaydet</button>
+    </form>
+</div>
