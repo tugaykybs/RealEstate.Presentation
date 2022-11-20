@@ -19,5 +19,7 @@ namespace RealEstate.EntityLayer.Concrete
         public string Price { get; set; }
         public int CategoryID { get; set; }
         public Category Category { get; set; }
+        public int AppUserID { get; set; }
+        public AppUser AppUser { get; set; }
     }
 }
